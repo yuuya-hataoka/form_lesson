@@ -162,3 +162,192 @@
 .resend-mail {
   display: inline-block;
 }
+
+
+
+.row {
+  margin-top: 20px;
+}
+
+.label_text {
+  display: block;
+  font-size: 12px;
+  color: #545658;
+}
+
+.name_box {
+  display: flex;
+}
+
+.name {
+  margin-left: 16px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+.input_init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+}
+
+.input_area {
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #545658;
+  margin-top: 5px;
+  border: 1px solid #d9d9d9;
+  line-height: 2;
+}
+
+.input_area:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.alert {
+  color: #dd4b39;
+}
+
+.gender_content {
+  display: flex;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #545658;
+}
+
+.gender_select {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gender_select:first-child {
+  margin-left: 0;
+}
+
+.gender_select input ,.course input {
+  display: none;
+}
+
+.gender_select span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender_select span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender_input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #01bfbd;
+  border-radius: 50%;
+}
+
+.select_area {
+  position: relative;
+  margin-top: 8px;
+}
+
+.select_area > .input_area {
+  margin-top: 0;
+}
+
+.select_area::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+}
+
+.origin_input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+.course_item {
+  margin-top: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course_item:first-child {
+  margin-top: 5px;
+}
+
+.course_item_text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course_item_text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+}
+
+.course_item input:checked + .course_item_text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -12px;
+  width: 8px;
+  height: 16px;
+  transform: rotate(45deg);
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+.remarks .input_area {
+  height: 100px;
+}
+
+.submit_button {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  border: 1px solid #01bfbd;
+}

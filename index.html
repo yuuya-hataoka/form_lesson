@@ -27,6 +27,92 @@
             <p class="is-defaultText">アカウント情報</p>
           </div>
           <form class="form-content" action="#" method="POST">
+            <div class="name_box">
+              <label class="name is-halfWidth">名字
+                <span class="alert">※</span>
+                <div>
+                  <input type="text" name="last name" class="input_init input_area" required>
+                </div>
+              </label>
+              <label class="name is-halfWidth">名前
+                <span class="alert">※</span>
+                <div>
+                  <input type="text" name="first name" class="input_init input_area" required>
+                </div>
+              </label>
+            </div>
+            <div class="row gender">
+              <p class="label_text is-fullWidth">性別</p>
+              <div class="gender_content">
+                <label class="gender_select">
+                  <input type="radio" name="gender" value="male" class="gender_input">
+                  <span>男性</span>
+                </label>
+                <label class="gender_select">
+                  <input type="radio" name="gender" value="female" class="gender_input">
+                  <span>女性</span>
+                </label>
+                <label class="gender_select">
+                  <input type="radio" name="gender" value="other" class="gender_input">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="row origin is-halfWidth">
+              <p class="label_text is-fullWidth">出身</p>
+              <div class="select_area">
+                <select name="origin" id="origin" class="input_init input_area origin_input">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="row email ">
+              <p class="label_text">Eメール
+                <span class="alert">※</span>
+              </p>
+              <input type="email" class="input_init input_area is-fullWidth" name="email" placeholder="ex)hoge@example.com" required>
+            </div>
+            <div class="row tel">
+              <p class="label_text">電話番号</p>
+              <input type="tel" class="input_init input_area is-fullWidth" name="tel" placeholder="ex)09012345678">
+            </div>
+            <div class="row password">
+              <p class="label_text">パスワード
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="input_init input_area is-fullWidth" name="password" required>
+            </div>
+            <div class="row password">
+              <p class="label_text">パスワード（確認用）
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="input_init input_area is-fullWidth" name="password-confirm" required>
+            </div>
+            <div class="row course">
+              <p class="label_text">希望コース</p>
+              <div class="course_item">
+                <input type="checkbox" name="course" value="frontend" id="frontend">
+                <label class="course_item_text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course_item">
+                <input type="checkbox" name="course" value="backend" id="backend">
+                <label class="course_item_text" for="backend">バックエンド</label>
+              </div>
+              <div class="course_item">
+                <input type="checkbox" name="course" value="app" id="app">
+                <label class="course_item_text" for="app">アプリ</label>
+              </div>
+            </div>
+            <div class="row remarks">
+              <p class="label_text">備考</p>
+              <textarea class="input_init input_area is-fullWidth" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="row">
+              <button type="submit" value="アカウント作成" class="input_init button submit_button is-fullWidth">アカウント作成</button>
+            </div>
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
