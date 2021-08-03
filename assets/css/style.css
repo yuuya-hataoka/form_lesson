@@ -351,3 +351,13 @@
   color: #fff;
   border: 1px solid #01bfbd;
 }
+
+.submit_button:hover {
+  background-color: #01a6a4;
+}
+
+.submit_button:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border-color: #d9d9d9;
+}
